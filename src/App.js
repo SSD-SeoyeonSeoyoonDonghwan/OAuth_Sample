@@ -1,6 +1,7 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Auth from './components/auth';
 import Login from "./components/login";
+import TokenSuccess from "./components/TokenSuccess";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Auth />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/token' element={<TokenSuccess />} />
         </Routes>
       </BrowserRouter>
     </div>
